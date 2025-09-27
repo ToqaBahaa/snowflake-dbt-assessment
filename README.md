@@ -19,7 +19,14 @@ This repository contains a dbt project built on **Snowflake** using the **SNOWFL
 
 - **Schema (`models/schema.yml`)**: contains column level documentation and tests.  
 - **Sources (`models/sources.yml`)**: defines raw TPCH tables as sources (`customer`, `orders`, `lineitem`) from the database `SNOWFLAKE_SAMPLE_DATA` and schema     `TPCH_SF1`.
+---
 
+## Exposures / Dashboards
+
+- `customer_revenue` exposure: represents a dashboard showing total revenue per customer.
+- `stg_orders_report` exposure: represents a dashboard showing order-level details including customer name, order_year and total_price.
+
+These exposures are defined in `models/exposures.yml`
 ---
 
 ## **Environment Setup (dbt Cloud)**
@@ -43,6 +50,15 @@ This repository contains a dbt project built on **Snowflake** using the **SNOWFL
   In dbt Cloud Studio, you can each model individually by clicking on Run
   
 2- Tests defined in schema.yml will run automatically after build
+
+---
+
+## Jobs
+
+- In this project, a job is configured to run daily:
+  1. `dbt build` – builds all models and runs tests.
+  2. `dbt docs generate` – generates project documentation.
+- Users who clone this repo should create their own job in dbt Cloud 
 
 3 - Generate and view documentation:
   Run this command to generate the doc

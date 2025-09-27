@@ -1,4 +1,3 @@
-{{ config(materialized="table") }}
 select
     o.o_orderkey as ORDER_KEY,
     c.c_name as customer_name,

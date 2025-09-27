@@ -45,11 +45,9 @@ This repository contains a dbt project built on **Snowflake** using the **SNOWFL
 2- Tests defined in schema.yml will run automatically after build
 
 3 - Generate and view documentation:
-
-  In your project environment, create a job with these commands to build your project and generate docs
+  Run this command to generate the doc
    ```bash
-       dbt build
        dbt docs generate
    ```  
-  Then click on view documentation to access it. 
+  Then click on the documentation icon to access it. 
   

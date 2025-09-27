@@ -1,4 +1,4 @@
-Welcome to snowflake-dbt-assessment Repository!
+**Welcome to snowflake-dbt-assessment Repository!**
 
 This repository contains a dbt project (snowflake_tpch_demo) built on **Snowflake** using the **SNOWFLAKE_SAMPLE_DATA**. The project demonstrates a simple ETL workflow using dbt's **medallion architecture** (silver and gold layers) and is fully developed using **dbt Cloud UI**.
 

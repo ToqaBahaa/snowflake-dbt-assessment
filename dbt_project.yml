@@ -1,8 +1,8 @@
-name: 'snowflake_tpch_demo'   #
-version: '1.0.0'
+name: "snowflake_tpch_demo"
+version: "1.0.0"
 config-version: 2
 
-profile: 'default'
+profile: "default"
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]
@@ -18,7 +18,6 @@ clean-targets:
 
 models:
   snowflake_tpch_demo:
-    +database: DEV_DB        
-    +schema: DEV_SCHEMA     
+    +database: DEV_DB
+    +schema: DEV_SCHEMA
     +materialized: table
-

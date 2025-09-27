@@ -1,0 +1,22 @@
+version: 2
+
+exposures:
+  - name: customer_revenue
+    type: dashboard
+    depends_on:
+      - ref('customer_revenue')
+    description: >
+      A dashboard shows total revenue per customer.
+    owner:
+      name: Toqa Bahaa
+      email: toqabahaa@aucegypt.edu
+
+  - name: stg_orders_report
+    type: dashboard
+    depends_on:
+      - ref('stg_orders')
+    description: >
+      A dashboard shows order-level details with customer names, order_year and total_price.
+    owner:
+          name: Toqa Bahaa
+          email: toqabahaa@aucegypt.edu

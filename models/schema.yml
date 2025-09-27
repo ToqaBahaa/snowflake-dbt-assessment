@@ -11,3 +11,8 @@ models:
       - name: CUSTOMER_KEY
         tests:
           - not_null
+      - name: total_revenue
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "total_revenue >= 0"

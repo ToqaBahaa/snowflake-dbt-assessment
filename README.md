@@ -50,4 +50,3 @@ This repository contains a dbt project built on **Snowflake** using the **SNOWFL
        dbt docs generate
    ```  
   Then click on the documentation icon to access it. 
-  

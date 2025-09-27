@@ -51,7 +51,14 @@ These exposures are defined in `models/exposures.yml`
   
 2- Tests defined in schema.yml will run automatically after build
 
----
+3 - Generate and view documentation:
+  Run this command to generate the doc
+   ```bash
+       dbt docs generate
+   ```  
+  Then click on the documentation icon to access it. 
+
+  ---
 
 ## Jobs
 
@@ -59,10 +66,3 @@ These exposures are defined in `models/exposures.yml`
   1. `dbt build` – builds all models and runs tests.
   2. `dbt docs generate` – generates project documentation.
 - Users who clone this repo should create their own job in dbt Cloud 
-
-3 - Generate and view documentation:
-  Run this command to generate the doc
-   ```bash
-       dbt docs generate
-   ```  
-  Then click on the documentation icon to access it. 

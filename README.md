@@ -17,7 +17,7 @@ This repository contains a dbt project built on **Snowflake** using the **SNOWFL
     - Tests:
       - `customer_key` is `not_null`.
 
-- **Schema definitions (`models/schema.yml`)**: contains column level documentation and tests.  
+- **Schema (`models/schema.yml`)**: contains column level documentation and tests.  
 - **Sources (`models/sources.yml`)**: defines raw TPCH tables as sources (`customer`, `orders`, `lineitem`) from the database `SNOWFLAKE_SAMPLE_DATA` and schema     `TPCH_SF1`.
 
 ---

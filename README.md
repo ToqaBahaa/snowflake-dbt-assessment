@@ -47,9 +47,9 @@ This repository contains a dbt project built on **Snowflake** using the **SNOWFL
 3 - Generate and view documentation:
 
   In your project environment, create a job with these commands to build your project and generate docs
-    ```bash
+   ```bash
        dbt build
        dbt docs generate
-    ```  
+   ```  
   Then click on view documentation to access it. 
   

@@ -20,7 +20,5 @@ models:
   snowflake_tpch_demo:
     +database: DEV_DB        
     +schema: DEV_SCHEMA     
-<<<<<<< HEAD
     +materialized: table
-=======
->>>>>>> 5286ecc189883df06df7f8c82209c0dadf12acfa
+

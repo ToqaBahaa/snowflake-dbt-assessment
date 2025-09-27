@@ -1,5 +1,5 @@
 select
-    c.c_custkey as customer_key,
+    c.c_custkey as CUSTOMER_KEY,
     SUM (l.l_extendedprice * (1 - l.l_discount)) as total_revenue
 from {{ source("snowflake_tpch", "orders") }} o
 join {{ source("snowflake_tpch", "customer") }} c on c.c_custkey = o.o_custkey

@@ -2,7 +2,7 @@ version: 2
 models:
   - name: stg_orders
     columns:
-      - name: ORDER_KEY
+      - name: order_key
         tests:
           - not_null
           - unique

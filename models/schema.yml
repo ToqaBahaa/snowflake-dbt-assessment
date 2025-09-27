@@ -8,6 +8,6 @@ models:
           - unique
   - name: customer_revenue
     columns:
-      - name: customer_key
+      - name: CUSTOMER_KEY
         tests:
           - not_null

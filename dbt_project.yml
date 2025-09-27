@@ -20,3 +20,4 @@ models:
   snowflake_tpch_demo:
     +database: DEV_DB        
     +schema: DEV_SCHEMA     
+    +materialized: table
